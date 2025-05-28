@@ -1,24 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AgroBrasil</title>
-</head>
-<body>
-    <head class="cabecalho">
-        <div class="cabecalho-int">
-            <div class="titulos">
-                <h2>Agro Brasil</h2>
-            </div>
-            <nav class="navegacao">
-
-            </nav>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="cabecalho-int">
+        <div class="titulos">
+          <h2>Agro Brasil</h2>
         </div>
-    </head>
+        <nav class="navegacao">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <main>
-        
+      <section
+        class="home"
+        id="home"
+        aria-label="Informações sobre o agronegócio brasileiro"
+      >
+        <article class="agrobra_po" aria-labelledby="titulo-agro">
+          <h3 id="titulo-agro">
+            O Agro no Brasil: Potência que Alimenta o Mundo
+          </h3>
+          <p>
+            O agronegócio brasileiro é um dos principais motores da economia
+            nacional. Atuando em toda a cadeia produtiva — do campo à mesa — ele
+            transforma o Brasil em líder global na produção de alimentos, fibras
+            e energia. A diversidade de climas e solos, aliada ao investimento
+            em tecnologia e pesquisa, faz do agro brasileiro uma referência
+            internacional.
+          </p>
+        </article>
+
+        <article class="agrobra_pilar" aria-labelledby="titulo-pilar">
+          <h3 id="titulo-pilar">
+            Pilar Econômico: A Importância do Agro para o Brasil
+          </h3>
+          <p>
+            O setor agropecuário representa aproximadamente 25% do PIB nacional,
+            sendo essencial para a geração de empregos e desenvolvimento do
+            interior do país. Só em 2023, o agro respondeu por quase metade das
+            exportações brasileiras, impulsionando a balança comercial e
+            garantindo divisas importantes.
+          </p>
+        </article>
+
+        <article class="agrobra_prod" aria-labelledby="titulo-prod">
+          <h3 id="titulo-prod">
+            Produção que Cruza Fronteiras: O Brasil como Celeiro Global
+          </h3>
+          <p>
+            O Brasil tem papel estratégico no abastecimento mundial. Exportamos
+            soja, carne bovina, milho, café e muitos outros produtos para mais
+            de 200 países. O campo brasileiro alimenta mais de 800 milhões de
+            pessoas no mundo, mostrando sua capacidade e responsabilidade na
+            segurança alimentar global.
+          </p>
+        </article>
+
+        <article class="agrotec_sus" aria-labelledby="titulo-tec">
+          <h3 id="titulo-tec">
+            Tecnologia e Sustentabilidade: O Futuro do Campo Já Começou
+          </h3>
+          <p>
+            O agronegócio moderno vai muito além da enxada. Hoje, o campo é
+            cenário de inovação com agricultura de precisão, uso de drones,
+            biotecnologia e práticas sustentáveis. Técnicas como o plantio
+            direto e a integração lavoura-pecuária-floresta reduzem impactos
+            ambientais e aumentam a produtividade de forma consciente.
+          </p>
+        </article>
+      </section>
+
+      <section class="agropecuaria">
+        <div class="flip-cards">
+          <input type="checkbox" id="card1" hidden />
+          <label class="card" for="card1">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>🌱 Agricultura Nacional</h3>
+              </div>
+              <div class="card-back">
+                <p>
+                  Tecnologia, tradição e produtividade nas lavouras. A
+                  agricultura é o carro-chefe do agro brasileiro, com destaque
+                  para soja, milho, café e cana-de-açúcar...
+                </p>
+                <p class="fonte">
+                  Fonte: Embrapa – www.embrapa.br<br />
+                  Fonte: IBGE – www.ibge.gov.br
+                </p>
+              </div>
+            </div>
+          </label>
+
+          <input type="checkbox" id="card2" hidden />
+          <label class="card" for="card2">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>🐄 Pecuária Brasileira</h3>
+              </div>
+              <div class="card-back">
+                <p>
+                  Do campo à mesa: carne, leite e sustentabilidade. A pecuária
+                  brasileira é referência mundial em produtividade...
+                </p>
+                <p class="fonte">
+                  Fonte: gov.br/agricultura<br />
+                  Fonte: Embrapa Pecuária Sudeste
+                </p>
+              </div>
+            </div>
+          </label>
+
+          <input type="checkbox" id="card3" hidden />
+          <label class="card" for="card3">
+            <div class="card-inner">
+              <div class="card-front">
+                <h3>🌾 Agropecuária no Brasil</h3>
+              </div>
+              <div class="card-back">
+                <p>
+                  A força que move a economia brasileira. A integração entre
+                  agricultura e pecuária gera eficiência...
+                </p>
+                <p class="fonte">
+                  Fonte: CNA Brasil<br />
+                  Fonte: CEPEA/USP
+                </p>
+              </div>
+            </div>
+          </label>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
